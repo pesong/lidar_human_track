@@ -1,0 +1,11 @@
+build/
+devel/
+.vscode/
+mei yong de/
+.catkin_workspace
+src/autoscrubber_services/
+src/darknet/
+.idea/
+*.bag
+cmake-build-debug/
+

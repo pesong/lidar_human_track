@@ -1,0 +1,12 @@
+score_map.cc  接收costmap，并做简单处理，转换成离墙距离的相对值，map里的每个点离墙越近，值越大。
+
+laser.cc 接收icp 坐标系下的二维位姿,并存储到全局变量中。\ 接收人的坐标。\ 接收激光雷达的点云 \基于激光雷达的目标跟踪，将断掉的人物坐标点连接起来
+
+camera.cc 将ros发过来的摄像头数据转换成opencv里的mat,并存储到全局变量里
+
+ltracker.cc 跟踪目标，当目标丢失时，找回跟踪的目标
+
+human.cc 预测目标轨迹，当前是10秒内目标的轨迹
+
+
+接受costmap地图，把costmap转化成scoremap，接收激光平面的observations,  

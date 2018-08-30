@@ -1,0 +1,21 @@
+这个是草稿版SSD
+
+首先安装ros-fulldestktop那个版本，Ubuntu 16.04装kinetic。 ros的python是2.7，必须要命令窗口是python2.7才行，修改默认python方法见ubuntu_python_version
+
+本地编译：直接把这个human_track_ssd拷贝到本地，
+cd human_track_ssd
+catkin_make
+
+第一次编译报错不过不要慌，编译顺序问题，再catkin_make编译一次就行
+
+然后运行: roslaunch greeter.launch
+同时跑包： rosbag play 2018-03-24-20-03-36.bag --pause --clock
+
+就ok啦，因为我这版草稿里还加了人脸识别，所以需要两个movidius，我这里还有一个，问我要就好啦~
+
+
+我这个project入口就是src/human_track/main.cpp 有用的代码在libSSD里，其他好像没什么用。
+草稿代码，菜鸡水平，将就看看，希望对你们有帮助呀~
+
+
+

@@ -1,0 +1,3 @@
+[submodule "src/autoscrubber_services"]
+	path = src/autoscrubber_services
+	url = git@git.gs-robot.com:autoscrubber/autoscrubber_services.git
